@@ -38,6 +38,13 @@
 
 <body>
 
+  <!-- Script tag for function change. -->
+  <script>
+    function ChangeDiscordTagToUsername(){
+      document.getElementById("discord-username").innerHTML = "<img class='icon' src='images/icons/discord.svg' alt=''> 10shua";
+    }
+  </script>
+
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
@@ -152,7 +159,7 @@
         <a class="button button-dev-to" href="#" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/dev-to.svg" alt="">Dev.to</a><br>
 
         <!-- Discord -->
-        <a class="button button-discord" href="#" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/discord.svg" alt="">Discord</a><br>
+        <a id="discord-username" onclick="ChangeDiscordTagToUsername()" class="button button-discord" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/discord.svg" alt="">Discord</a><br>
 
         <!-- Dribbble -->
         <a class="button button-dribbble" href="#" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/dribbble.svg" alt="">Dribbble</a><br>
